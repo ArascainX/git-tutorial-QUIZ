@@ -41,7 +41,7 @@ otazky = [
     },
     {
         "vyzva": "V jakem státě se nachazí herní svet Kingdom Come: Deliverance?",
-        "moznosti": ["a) Česka republika", "b) NĚmecko", "c) Polsko", "d) Maďarsko"],
+        "moznosti": ["a) Česka republika", "b) Německo", "c) Polsko", "d) Maďarsko"],
         "odpoved": "a"
     },
     {
@@ -63,7 +63,7 @@ def spustit_kviz(otazky):
             print("Správně!\n")
             skore += 1
         else:
-            print("špatná odpověd!!! - Správná odpověď je", otazka["odpoved"], "\n")
+            print(f"Špatná odpověd, jsi uplný LOSER!!! - Správná odpověď je {otazka["odpoved"]} ty pako :D" "\n")
 
     print(f"Tvé celkové skóre je: {skore} z {len(otazky)} možných bodů")
 
